@@ -1,0 +1,45 @@
+POST  http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "name": "Lucas",
+    "email": "lucas@gmail.com",
+    "password": "abcde"
+}
+
+###
+
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email": "lucas@gmail.com",
+    "password": "abcde"
+}
+
+###
+
+POST http://localhost:3003/post
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZjMTNlNTExLWI0YzItNGMzMS1iYTFhLTgwODRiOGNjNTA0NCIsImlhdCI6MTY1MDQ0OTQyNCwiZXhwIjoxNjUwNDQ5NzI0fQ.ExPfMIxSYUtsyyGV9kq7UKa-vxCfGYPxCRxPLq49TF8
+
+{
+    "photo": "https://img.freepik.com/free-psd/magazine-mockup-with-shadow-overlay_23-2149221975.jpg?size=664&ext=jpg&ga=GA1.1.206912162.1647009634",
+    "description": "Foto aleatoria2",
+    "type": "normal",
+    "author_id": "e25b4c7b-405b-4c24-b092-f2c5796d0821"
+}
+
+###
+
+GET http://localhost:3003/user/post/b52282bb-6c30-4762-811b-5f0099e5e2e6
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUyNWI0YzdiLTQwNWItNGMyNC1iMDkyLWYyYzU3OTZkMDgyMSIsImlhdCI6MTY0NzAxMzUzNSwiZXhwIjoxNjQ3MDEzODM1fQ.X1mViOM-Jy2YK25R1w-cyEG9xZXEzbeEn6DA2To_83Q
+
+###
+
+POST http://localhost:3003/user/friendship/:id
+Content-Type: application/json
+Authorization:
+
+###
